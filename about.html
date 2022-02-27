@@ -28,6 +28,25 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+
+<script>
+  textopen = false
+  
+  const inserttext = () => {
+    if (textopen == false){
+      document.getElementById("bottone").innerHTML = "<p id='bottonetesto'>Ad aprile 2018 la Food and Drug Administration (FDA) ha autorizzato la commercializzazione del primo dispositivo medico per l’utilizzo dell’AI per rilevare la retinopatia diabetica negli adulti affetti da diabete. Dopo aver caricato le foto della retina, il software - chiamato IDx-DR – indica se la qualità dell’immagine è sufficiente per ottenere un buon risultato e poi la analizza per determinare se siano presenti i segni della malattia. In uno studio clinico osservazionale che ha utilizzato più di 900 immagini, IDx-DR ha rilevato correttamente la retinopatia nel 87% delle volte.L'algoritmo venne ideato e sviluppato per la prima volta dal professore Michael Abramoff della città di Iowa City.<p>"
+      textopen = true
+    }
+    else {
+      $("#bottonetesto").remove()
+      textopen = false
+    }
+    console.log(textopen)
+  }
+
+</script>
+
+
 <body class="sub_page">
   <div class="hero_area layout_padding-left">
     <div class="custom_nav-box">
@@ -50,16 +69,13 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html"> About</a>
+            <a class="nav-link" href="about.html"> Eye and machine learning</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="service.html"> services </a>
+            <a class="nav-link" href="service.html"> Robotics </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="specialist.html">Specialists </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="specialist.html">Nanotecnologie </a>
           </li>
         </ul>
       </div>
@@ -74,7 +90,7 @@
             <a class="navbar-brand" href="index.html">
               <img src="images/logo.png" alt="" />
               <span>
-                Drokula
+                Eye and Machine learning
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,18 +149,27 @@
       <div class="detail-box">
         <div class="heading_container">
           <h2>
-            About Us
+            Machine Learning per proteggere la vista
           </h2>
         </div>
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
-        </p>
-        <a href="">
+          La perdita della vista è un pericolo concreto in quanto può accadere che non venga diagnosticata in tempo.
+La soluzione fornita dalla nuova rivoluzione industriale può essere quella di uno sviluppo software che possa rilevare malattie che possono potenzialmente portare alla cecità.
+Questo software può rilevare con ampio margine di precisione vari tipi di malattie oftalmiche (Riguardante gli occhi dal punto di vista anatomico o patologico.)
+
+L’intelligenza artificiale e l’apprendimento automatico sono utilizzati per insegnare al sistema operativo a riconoscere sintomi di patologie oculari e a identificare precocemente i pazienti a rischio cecità.
+
+Molti casi sono prevenibili . Cambieranno le modalità degli esami alla vista e i medici sapranno dare priorità ai pazienti con maggiore rischio.
+
+Grazie a fotocamere speciali , smartphone e banda larga via satellite di piccole dimensioni verranno fornite immagini ad alta risoluzione della retina del paziente al software e le invia agli oftalmologi tramite la banda larga via satellite.
+</p>
+        <button onclick = "inserttext()" class="btn btn-info" style = "padding bottom:0px;padding-top:40px">
           Read More
-        </a>
+          <div id = "bottone"><p id ="bottonetesto"></p></div>
+        </sbutton>
       </div>
       <div class="img-box">
-        <img src="images/about-img.jpg" alt="">
+        <img src="https://media.paginemediche.it/benessere/bellezza-e-salute/visita-oculistica-e-occhiali-proteggere-la-vista-e-la-salute-degli-occhi/6115-visita-oculistica-e-occhiali-proteggere-la-vista-e-la-salute-degli-occhi-615-346.jpg" id = "bottone" alt="">
       </div>
     </div>
   </section>
@@ -155,101 +180,49 @@
   <!-- info section -->
 
   <section class="info_section  layout_padding-left">
-    <div class="social_box">
-      <a href="">
-        <img src="images/facebook-logo-button.png" alt="">
-      </a>
-      <a href="">
-        <img src="images/twitter-logo-button.png" alt="">
-      </a>
-      <a href="">
-        <img src="images/linkedin.png" alt="">
-      </a>
-      <a href="">
-        <img src="images/instagram.png" alt="">
-      </a>
-    </div>
     <div class="info_container layout_padding">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <h6>
-              About Drokula
+              Qualche informazione in più...
             </h6>
-            <p>
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u
-            </p>
+            <p>Questo sito è frutto di una ricerca interdisciplinare che cerca di affrontare le novità che negli ultimi anni la quarta rivoluzione industriale portando nel settore medico-ospedaliero.</p>
           </div>
-          <div class="col-md-2 offset-lg-1">
+          <div class="col-md-4 offset-lg-1">
             <h6>
-              Menus
+              Cosa puoi trovare?
             </h6>
             <ul>
               <li class=" active">
                 <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="">
-                <a class="" href="about.html">About </a>
+                <a class="" href="intro.html">Introduzione</a>
               </li>
               <li class="">
-                <a class="" href="service.html">Services </a>
+                <a class="" href="vista.html">Machine learning</a>
               </li>
               <li class="">
-                <a class="" href="specialist.html">Specialists </a>
+                <a class="" href="nano.html">Nanotecnologie e salute</a>
               </li>
               <li class="">
-                <a class="" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>
-              Useful Links
-            </h6>
-            <ul>
-              <li>
-                <a href="">
-                  Adipiscing
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Elit, sed
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  do Eiusmod
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Tempor
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  incididunt
-                </a>
+                <a class="" href="specialist.html">?????????????</a>
               </li>
             </ul>
           </div>
           <div class="col-md-4 col-lg-3">
             <h6>
-              Contact Us
+              Come contattarci?
             </h6>
             <div class="info_link-box">
               <a href="">
                 <img src="images/location.png" alt="">
-                <span> No.123 Chalingt Gates, loram ipusm</span>
-              </a>
-              <a href="">
-                <img src="images/call.png" alt="">
-                <span>+01 12345678901</span>
+                <span> Liceo Ariosto Spallanzani</span>
               </a>
               <a href="">
                 <img src="images/mail.png" alt="">
-                <span> demo123@gmail.com</span>
+                <span> ndbpresentazione@gmail.com</span>
               </a>
             </div>
           </div>
