@@ -28,25 +28,6 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-
-<script>
-  textopen = false
-  
-  const inserttext = () => {
-    if (textopen == false){
-      document.getElementById("bottone").innerHTML = "<p id='bottonetesto'>Ad aprile 2018 la Food and Drug Administration (FDA) ha autorizzato la commercializzazione del primo dispositivo medico per l’utilizzo dell’AI per rilevare la retinopatia diabetica negli adulti affetti da diabete. Dopo aver caricato le foto della retina, il software - chiamato IDx-DR – indica se la qualità dell’immagine è sufficiente per ottenere un buon risultato e poi la analizza per determinare se siano presenti i segni della malattia. In uno studio clinico osservazionale che ha utilizzato più di 900 immagini, IDx-DR ha rilevato correttamente la retinopatia nel 87% delle volte.L'algoritmo venne ideato e sviluppato per la prima volta dal professore Michael Abramoff della città di Iowa City.<p>"
-      textopen = true
-    }
-    else {
-      $("#bottonetesto").remove()
-      textopen = false
-    }
-    console.log(textopen)
-  }
-
-</script>
-
-
 <body class="sub_page">
   <div class="hero_area layout_padding-left">
     <div class="custom_nav-box">
@@ -69,13 +50,13 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Eye and Machine Learning</a>
+            <a class="nav-link" href="eye.html">Vista e 4.0</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="service.html"> Robotica </a>
+            <a class="nav-link" href="robo.html">Robotica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="specialist.html">Nanotecnologie </a>
+            <a class="nav-link" href="nano.html">Nanotecnologie</a>
           </li>
         </ul>
       </div>
@@ -83,58 +64,36 @@
     </div>
     <div class="hero_container">
 
-      <!-- header section strats -->
+      <!-- header section -->
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="" />
+              <img src="images/medicallogo.png" alt="" />
               <span>
-                Robotica
+                School Project
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav  ">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html"> services </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="specialist.html">Specialists </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
           </nav>
         </div>
       </header>
-      <!-- end header section -->
     </div>
   </div>
 
 
   <!-- about section -->
-
   <section class="about_section  layout_padding-left">
     <div class="box">
       <div class="detail-box">
         <div class="heading_container">
-          <h2>
-            Come la robotica entrerà nella medicina ?
-          </h2>
+          <h1>
+            COME LA ROBOTICA ENTRERÀ NELLA MEDICINA?
+          </h1>
         </div>
         <p>
             I robot nel campo medico stanno trasformando le operazioni chirurgiche, semplificando la fornitura e la disinfezione, consentendo maggiore tempo ai fornitori di interagire con i pazienti. 
@@ -145,22 +104,17 @@
             La visione artificiale in 3D ad alta definizione è in grado di fornire ai chirurghi informazioni dettagliate e prestazioni migliorate durante le procedure. 
             
             Però i robot sono solo i primi, non gli unici elementi tra virgolette tecnologici presenti in un ospedale o in una clinica, infatti con il passare degli anni sta diventando molto più presente ed importante il supporto tecnologico al personale sanitario.
-            
-</p>
+        </p>
       </div>
       <div class="img-box">
-        <img src="https://media.paginemediche.it/medicina-e-prevenzione/prevenzione-e-terapie/chirurgia-robotica-vantaggi-e-rischi/chirurgia-robotica-cos-e-e-quali-sono-i-vantaggi-1200-900.jpg" id = "bottone" alt="">
+        <img src="images/robo.jpeg" id = "bottone" alt="">
       </div>
     </div>
   </section>
 
-  <!-- end about section -->
-
-
   <!-- info section -->
-
   <section class="info_section  layout_padding-left">
-    <div class="info_container layout_padding">
+    <div class="info_container layout_padding3">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -178,16 +132,13 @@
                 <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="">
-                <a class="" href="intro.html">Introduzione</a>
+                <a class="" href="eye.html">Cecità e machine learning</a>
               </li>
               <li class="">
-                <a class="" href="vista.html">Machine learning</a>
+                <a class="" href="robo.html">Robotica</a>
               </li>
               <li class="">
-                <a class="" href="nano.html">Nanotecnologie e salute</a>
-              </li>
-              <li class="">
-                <a class="" href="specialist.html">?????????????</a>
+                <a class="" href="nano.html">Nanotecnologie</a>
               </li>
             </ul>
           </div>
@@ -211,33 +162,14 @@
     </div>
   </section>
 
-  <!-- end info section -->
-
   <!-- footer section -->
   <footer class="container-fluid footer_section ">
-    <div class="social_container">
-      <div class="social_box">
-        <a href="">
-          <img src="images/facebook-logo-button.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/twitter-logo-button.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/linkedin.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/instagram.png" alt="">
-        </a>
-      </div>
-    </div>
     <div class="container">
       <p>
         Progetto realizzato da Bartoli Matteo e Giulio Di Silvestri
       </p>
     </div>
   </footer>
-  <!-- footer section -->
 
 
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -266,7 +198,6 @@
       items: 3
     });
   </script>
-</body>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Machine Learning and Healthcare 4.0</title>
+  <title>Robotics and Healthcare 4.0</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -27,25 +27,6 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
-
-
-<script>
-  textopen = false
-  
-  const inserttext = () => {
-    if (textopen == false){
-      document.getElementById("bottone").innerHTML = "<p id='bottonetesto'>Ad aprile 2018 la Food and Drug Administration (FDA) ha autorizzato la commercializzazione del primo dispositivo medico per l’utilizzo dell’AI per rilevare la retinopatia diabetica negli adulti affetti da diabete. Dopo aver caricato le foto della retina, il software - chiamato IDx-DR – indica se la qualità dell’immagine è sufficiente per ottenere un buon risultato e poi la analizza per determinare se siano presenti i segni della malattia. In uno studio clinico osservazionale che ha utilizzato più di 900 immagini, IDx-DR ha rilevato correttamente la retinopatia nel 87% delle volte.L'algoritmo venne ideato e sviluppato per la prima volta dal professore Michael Abramoff della città di Iowa City.<p>"
-      textopen = true
-    }
-    else {
-      $("#bottonetesto").remove()
-      textopen = false
-    }
-    console.log(textopen)
-  }
-
-</script>
-
 
 <body class="sub_page">
   <div class="hero_area layout_padding-left">
@@ -69,13 +50,13 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Eye and Machine Learning</a>
+            <a class="nav-link" href="eye.html">Vista e 4.0</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="service.html"> Robotica </a>
+            <a class="nav-link" href="robo.html">Robotica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="specialist.html">Nanotecnologie </a>
+            <a class="nav-link" href="nano.html">Nanotecnologie</a>
           </li>
         </ul>
       </div>
@@ -83,89 +64,53 @@
     </div>
     <div class="hero_container">
 
-      <!-- header section strats -->
+      <!-- header section -->
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="" />
+              <img src="images/medicallogo.png" alt="" />
               <span>
-                Eye and Machine learning
+                School Project
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav  ">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html"> services </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="specialist.html">Specialists </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
 
-              </div>
-            </div>
-
+          </nav>
         </div>
       </header>
-      <!-- end header section -->
     </div>
   </div>
 
 
   <!-- about section -->
-
   <section class="about_section  layout_padding-left">
     <div class="box">
       <div class="detail-box">
         <div class="heading_container">
-          <h2>
-            Machine Learning per proteggere la vista
-          </h2>
+          <h1>
+            CHE CONTRIBUTO PUÒ DARE LA NANOTECNOLOGIA NELLA MEDICINA?
+          </h1>
         </div>
         <p>
-          La perdita della vista è un pericolo concreto in quanto può accadere che non venga diagnosticata in tempo.
-La soluzione fornita dalla nuova rivoluzione industriale può essere quella di uno sviluppo software che possa rilevare malattie che possono potenzialmente portare alla cecità.
-Questo software può rilevare con ampio margine di precisione vari tipi di malattie oftalmiche (Riguardante gli occhi dal punto di vista anatomico o patologico.)
-
-L’intelligenza artificiale e l’apprendimento automatico sono utilizzati per insegnare al sistema operativo a riconoscere sintomi di patologie oculari e a identificare precocemente i pazienti a rischio cecità.
-
-Molti casi sono prevenibili . Cambieranno le modalità degli esami alla vista e i medici sapranno dare priorità ai pazienti con maggiore rischio.
-
-Grazie a fotocamere speciali , smartphone e banda larga via satellite di piccole dimensioni verranno fornite immagini ad alta risoluzione della retina del paziente al software e le invia agli oftalmologi tramite la banda larga via satellite.
-</p>
-        <button onclick = "inserttext()" class="btn btn-info" style = "padding-bottom :0px;padding-top:40px">
-          Read More
-          <div id = "bottone"><p id ="bottonetesto"></p></div>
-        </sbutton>
+          Sviluppare soluzioni e farmaci basati su nanoparticelle, capaci di raggiungere il bersaglio della malattia in modo più efficace e mirato: <br> questa è una delle più potenzilamente rivoluzionarie e nuove frontiere della medicina.
+          <br><br>
+          Uno dei principali problemi relativi all’utilizzo delle nanoparticelle in medicina è che queste, una volta iniettate nel corpo, vengono riconosciute immediatamente dal tessuto immunitario come estranee, e rimosse velocemente del fegato, annullando i benefici del trattamento.
+          Questo problema è affrontato da alcuni gruppi di ricerca dal punto di vista chimico, cercando di rendere le nanoparticelle irriconoscibili, creando sulla superficie delle nanoparticelle una corona idrofobica: una specie di schermo capace di renderle meno adesive e quindi più difficili da bloccare da parte del sistema immunitario.
+          Questo unito allo studio delle malattie, dei loro comportamenti, delle modalità con le quali esse possono essere sconfitte, può portare a grandi traguardi come si spera un giorno la cura del cancro.</p>
       </div>
       <div class="img-box">
-        <img src="https://media.paginemediche.it/benessere/bellezza-e-salute/visita-oculistica-e-occhiali-proteggere-la-vista-e-la-salute-degli-occhi/6115-visita-oculistica-e-occhiali-proteggere-la-vista-e-la-salute-degli-occhi-615-346.jpg" id = "bottone" alt="">
+        <img src="images/nano1.jpg" id = "bottone" alt="">
       </div>
     </div>
   </section>
 
-  <!-- end about section -->
-
-
   <!-- info section -->
-
   <section class="info_section  layout_padding-left">
-    <div class="info_container layout_padding">
+    <div class="info_container layout_padding3">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -183,16 +128,13 @@ Grazie a fotocamere speciali , smartphone e banda larga via satellite di piccole
                 <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="">
-                <a class="" href="intro.html">Introduzione</a>
+                <a class="" href="eye.html">Cecità e machine learning</a>
               </li>
               <li class="">
-                <a class="" href="vista.html">Machine learning</a>
+                <a class="" href="robo.html">Robotica</a>
               </li>
               <li class="">
-                <a class="" href="nano.html">Nanotecnologie e salute</a>
-              </li>
-              <li class="">
-                <a class="" href="specialist.html">?????????????</a>
+                <a class="" href="nano.html">Nanotecnologie</a>
               </li>
             </ul>
           </div>
@@ -216,33 +158,14 @@ Grazie a fotocamere speciali , smartphone e banda larga via satellite di piccole
     </div>
   </section>
 
-  <!-- end info section -->
-
   <!-- footer section -->
   <footer class="container-fluid footer_section ">
-    <div class="social_container">
-      <div class="social_box">
-        <a href="">
-          <img src="images/facebook-logo-button.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/twitter-logo-button.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/linkedin.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/instagram.png" alt="">
-        </a>
-      </div>
-    </div>
     <div class="container">
       <p>
         Progetto realizzato da Bartoli Matteo e Giulio Di Silvestri
       </p>
     </div>
   </footer>
-  <!-- footer section -->
 
 
   <script src="js/jquery-3.4.1.min.js"></script>

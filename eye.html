@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Healthcare 4.0</title>
+  <title>Sight and Industry 4.0</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -28,7 +28,25 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<body>
+<script>
+  textopen = false
+  
+  const inserttext = () => {
+    if (textopen == false){
+      document.getElementById("bottone").innerHTML = "<p id='bottonetesto'>Ad aprile 2018 la Food and Drug Administration (FDA) ha autorizzato la commercializzazione del primo dispositivo medico per l’utilizzo dell’AI per rilevare la retinopatia diabetica negli adulti affetti da diabete. Dopo aver caricato le foto della retina, il software - chiamato IDx-DR – indica se la qualità dell’immagine è sufficiente per ottenere un buon risultato e poi la analizza per determinare se siano presenti i segni della malattia. In uno studio clinico osservazionale che ha utilizzato più di 900 immagini, IDx-DR ha rilevato correttamente la retinopatia nel 87% delle volte.L'algoritmo venne ideato e sviluppato per la prima volta dal professore Michael Abramoff della città di Iowa City.<p>"
+      textopen = true
+    }
+    else {
+      $("#bottonetesto").remove()
+      textopen = false
+    }
+    console.log(textopen)
+  }
+
+</script>
+
+
+<body class="sub_page">
   <div class="hero_area layout_padding-left">
     <div class="custom_nav-box">
       <div class="custom_menu-btn ">
@@ -82,150 +100,50 @@
           </nav>
         </div>
       </header>
-
-      <!-- schermata iniziale -->
-      <section class=" slider_section ">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="detail-box">
-                <h1>
-                  RIVOLUZIONE 4.0 <br>
-                  <span>
-                    e SANITÀ
-                  </span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="img-box">
-          <img src="images/home3.jpg" alt="">
-        </div>
-      </section>
     </div>
   </div>
 
-  <!-- INTRODUZIONE -->
-  <section class="service_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h1>
-          LE CONSEGUENZE DELLA TECNOLOGIA SULLA SANITÀ
-        </h1>
-        <p>
-          Nel 2022 stiamo vivendo una nuova transizione industriale i cui tratti distintivi sono senza dubbio l’utilizzo di sensori, lo sfruttamento del machine learning e dell’IA e per ultima la massiccia elaborazione dei dati.
-          L’intento della nostra ricerca è quello di cogliere quali saranno i vantaggi che queste innovazioni porteranno nell’ambito sanitario e di analizzarli assieme.
-        <br>
-          Ci si aspetta un graduale passaggio ad una digitalizzazione dei processi clinico-assistenziali con lo scopo di fornire un approccio integrato alla cura del paziente e consentire di valutare l’assistenza prestata, pur sempre mantenendo una componente umana fondamentale.
-          Nelle tre sezioni sottostanti possiamo trovare tre dei vari effetti che la rivoluzione 4.0 ha avuto nella ambito medico-santiario.
-        </p>
-      </div>
-      <div class="service_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/Eyecon.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h4>
-              Machine Learning e cecità
-            </h4>
-            <p>
-              Le nuove risorse proposte dall'intelligenza artificiale potranno aiutare i medici nelle loro diagnosi...
-            </p>
-            <a href="./eye.html">
-              Read More
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/armrobot.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h4>
-              Robotica
-            </h4>
-            <p>
-              I robot nel campo medico stanno trasformando le operazioni chirurgiche, semplificando la fornitura e la disinfezione, consentendo maggiore tempo ai fornitori di interagire con i pazienti...
-            </p>
-            <a href="./robo.html">
-              Read More
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/aaaaa.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h4>
-              Nanotecnologie
-            </h4>
-            <p>
-              Sviluppare soluzioni e farmaci basati su nanoparticelle, capaci di raggiungere il bersaglio della malattia in modo più efficace e mirato ...
 
-            </p>
-            <a href="./nano.html">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VISTA -->
-  <section class="about_section layout_padding-left">
+  <!-- about section -->
+  <section class="about_section  layout_padding-left">
     <div class="box">
       <div class="detail-box">
         <div class="heading_container">
           <h1>
-            L'UOMO E LA TECNOLOGIA
+            SI POSSONO PREVENIRE MALATTIE E PROBLMETICHE AGLI OCCHI?
           </h1>
         </div>
         <p>
-          La nuova sanità deve avere al centro della sua attenzione l’uomo.
-          I nuovi esperti del settore dovranno assumere competenze come problem solving e capacità di lavorare in team oltre a prendere familiarità con gli elementi tipici della smart factory: Automazioni, IOT, I.A., Cloud e Big Data.
-
-          Proprio IOT e Big Data saranno elementi chiave di questa evoluzione. 
-          Ad esempio la comunicazione medico-paziente potrà avvenire anche avvalendosi di strumentazioni di tipo wearable che monitoreranno il paziente fornendo assistenza e controlli in qualsiasi momento della giornata.
-
-          Tramite quindi i dati raccolti che saranno a disposizione di un team di medici o volendo anche dello stesso paziente si potrà definire un percorso terapeutico più efficace possibile.
-
+          La perdita della vista è un pericolo concreto in quanto può accadere che non venga diagnosticata in tempo.
+          La soluzione fornita dalla nuova rivoluzione industriale può essere quella di uno sviluppo software che possa rilevare malattie che possono potenzialmente portare alla cecità.
+          Questo software può rilevare con ampio margine di precisione vari tipi di malattie oftalmiche (Riguardante gli occhi dal punto di vista anatomico o patologico.)
+                  
+          L’intelligenza artificiale e l’apprendimento automatico sono utilizzati per insegnare al sistema operativo a riconoscere sintomi di patologie oculari e a identificare precocemente i pazienti a rischio cecità.
+                  
+          Molti casi sono prevenibili . Cambieranno le modalità degli esami alla vista e i medici sapranno dare priorità ai pazienti con maggiore rischio.
+                  
+          Grazie a fotocamere speciali , smartphone e banda larga via satellite di piccole dimensioni verranno fornite immagini ad alta risoluzione della retina del paziente al software e le invia agli oftalmologi tramite la banda larga via satellite.
         </p>
       </div>
+
       <div class="img-box">
-        <img src="images/home.jpg" alt="">
+        <img src="images/eye1.jpg" id = "bottone" alt="">
       </div>
     </div>
-  </section>
 
-  <!-- NEW BENEFITS AND CONCLUSION -->
-  <section class="service_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h1>
-          BENEFICI
-        </h1>
-        <p>
-          Alcuni benefici di questo connubio sono:
-        </p>
-        <ul>
-          <li>Cartelle cliniche elettroniche, sempre accessibili</li>
-          <li>Fornire cure più rapide a coloro che arrivano all’ospedale</li>
-          <li>Monitoraggio e assistenza sanitaria a distanza</li>
-          <li>Maggiore precisione nelle diagnosi e negli interventi</li>
-        </ul>
-
-        <h5>Tutte queste nuove frontiere in continua evoluzione, ci fanno capire come ancora oggi siamo nel pieno della quarta rivoluzione industriale che, nonostante le innumerevoli difficoltà, si spera porti a vantaggi e soluzioni.</h5>
+    <div class = "box">
+      <div class="detail-box" style="text-align:center;">
+        <button onclick = "inserttext()" class="btn btn-info" style = "padding-bottom :0px; padding-top:30px; padding-left: 30px; padding-right: 30px;">
+          Read More
+          <div id = "bottone"><p id ="bottonetesto"></p></div>
+        </sbutton>
       </div>
     </div>
   </section>
 
   <!-- info section -->
   <section class="info_section  layout_padding-left">
-    <div class="info_container layout_padding">
+    <div class="info_container layout_padding3">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -308,7 +226,7 @@
       items: 3
     });
   </script>
-
+</body>
 </body>
 
 </html>
