@@ -28,6 +28,23 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+<script>
+  textopen = false
+  
+  const inserttext = () => {
+    if (textopen == false){
+      document.getElementById("bottone").innerHTML = "<p id='bottonetesto'>La ricerca viene anche indirizzata nel progettare materiali più sensibili e intelligenti. Ad esempio il laboratorio SRI International in California ha sviluppato un tipo di tessuto che cambia rigidità su effetto elettrostatico: con meno voltaggio si ha più cedevolezza. Questo tipo di tessuti viene impiegato anche nella costruzione di esoscheletri e permette di limitare i danni legati alla troppa usura o a forti impatti indesiderati. Nelle protesi delle gambe questa meccanica viene sfruttata nel momento in cui il tallone poggia a terra, qui il tessuto diventa più flessibile, poi nello step successivo della camminata diventa più rigido affinchè sia possibile sollevare il corpo da terra. <br>La comunicazione con il sistema nervoso invece avviene in primo luogo grazie a degli elettrodi presenti sul resto della gamba. Le contrazioni muscolari vengono misurate e comunicate all’arto meccanico.<p>"
+      textopen = true
+    }
+    else {
+      $("#bottonetesto").remove()
+      textopen = false
+    }
+    console.log(textopen)
+  }
+
+</script>
+
 <body class="sub_page">
   <div class="hero_area layout_padding-left">
     <div class="custom_nav-box">
@@ -96,18 +113,34 @@
           </h1>
         </div>
         <p>
-            I robot nel campo medico stanno trasformando le operazioni chirurgiche, semplificando la fornitura e la disinfezione, consentendo maggiore tempo ai fornitori di interagire con i pazienti. 
-
-            Nel corso degli anni, la visione artificiale consentita dall'intelligenza artificiale (IA) e l'analisi dei dati hanno trasformato la robotica sanitaria, espandendo le funzionalità in molte altre aree dell'assistenza sanitaria. I robot vengono utilizzati non solo nella sala operatoria, ma anche negli ambienti clinici per il supporto dei lavoratori sanitari e per il miglioramento dell'assistenza dei pazienti.
-            Con l'avanzare delle tecnologie di controllo del movimento, i robot di assistenza chirurgica sono diventati più precisi. Questi robot aiutano a eseguire micro procedure complesse, senza l'esigenza di praticare grandi incisioni.
-            
-            La visione artificiale in 3D ad alta definizione è in grado di fornire ai chirurghi informazioni dettagliate e prestazioni migliorate durante le procedure. 
-            
-            Però i robot sono solo i primi, non gli unici elementi tra virgolette tecnologici presenti in un ospedale o in una clinica, infatti con il passare degli anni sta diventando molto più presente ed importante il supporto tecnologico al personale sanitario.
+         Spesso gli ingegneri per trovare nuove soluzioni si ispirano alla natura. Questo è molto evidente in settori come la genetica , la medicina rigenerativa o anche la bionica. Oggi infatti è possibile attuare una compenetrazione tra uomo e bionica che prevede la cooperazione tra componenti elettromeccaniche e corpo umano.
+ 
+         L’obiettivo è quello di colmare il gap tra disabilità e abilità.
+         <br>        
+         Al MIT media lab è nato un progetto con l’obiettivo di sviluppare delle scienze di base che possano permettere la riparazione rigenerativa degli esseri umani. Una testimonianza importante riguardo queste innovazioni è quella fornita da
+        
+         Hugh Herr,scalatore e professore dell’MIT a cui erano state amputate entrambe le gambe a seguito di un incidente. Egli ha raccontato la sua esperienza in un TED TALK e approfittando della situazione ha anche spiegato il meccanismo con cui funzionano le sue nuove gambe bioniche (modello BiOMs).
+         <br>
+         Ci sono in totale 3 interfacce estreme ( meccanica, come collegare le parti meccaniche al corpo , dinamica con l’intento di simulare il reale comportamento di una gamba e elettrica affinché comunichi con il sistema nervoso ).
+        
+         Riguardo la parte meccanica ancora oggi non si sa esattamente come collegare le parti meccaniche al corpo nel modo migliore, esempio classico sono le scarpe ( nonostante la grande anzianità di questa invenzione ancora oggi capita spesso che un paio di scarpe causi la formazione di vesciche). La soluzione per cui gli ingegneri e biomedici del MIT hanno optato però sembra essere molto valida : collegare la protesi al corpo tramite pelle sintetica. Questa scelta è stata influenzata dal bisogno di un materiale che fosse abbastanza rigido senza però creare disagio all’ospite. Motivo per cui si procede prima di tutto con l'utilizzo di un dispositivo chiamato attuatore con cui vengono misurate le dimensioni e la flessibilità dei tessuti dell’arto da analizzare per realizzare una mappatura 3D accurata di esso. La mappatura è utile dal momento che si è notato che il sistema corpo-protesi si comporta meglio con una pelle sintetica più morbida nelle zone dell’arto più rigide e viceversa.
+         <br>
+         
+ 
         </p>
+
       </div>
       <div class="img-box">
         <img src="images/robo.jpeg" id = "robo" alt="">
+      </div>
+    </div>
+
+    <div class = "box">
+      <div class="detail-box" style="text-align:center;">
+        <button onclick = "inserttext()" class="btn btn-info" style = "padding-bottom :0px; padding-top:30px; padding-left: 30px; padding-right: 30px;">
+          Read More
+          <div id = "bottone"><p id ="bottonetesto"></p></div>
+        </sbutton>
       </div>
     </div>
   </section>
