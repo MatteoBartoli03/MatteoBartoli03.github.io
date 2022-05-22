@@ -428,8 +428,8 @@ a:focus {
 
 // end slider section
 
-// service section
 
+// service section
 .service_section {
 
   @include second-font();
@@ -1043,3 +1043,10 @@ a:focus {
 }
 
 // end navbar slide toggle style
+#s2 {
+  padding-top:1.5vh;
+  height:max-content;
+  width:100vw;
+  color: rgb(0, 0, 0); 
+  background-color: rgb(252, 252, 252);
+}

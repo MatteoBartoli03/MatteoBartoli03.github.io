@@ -28,24 +28,6 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<script>
-  textopen = false
-  
-  const inserttext = () => {
-    if (textopen == false){
-      document.getElementById("bottone").innerHTML = "<p id='bottonetesto'>Ad aprile 2018 la Food and Drug Administration (FDA) ha autorizzato la commercializzazione del primo dispositivo medico per l’utilizzo dell’AI per rilevare la retinopatia diabetica negli adulti affetti da diabete. Dopo aver caricato le foto della retina, il software - chiamato IDx-DR – indica se la qualità dell’immagine è sufficiente per ottenere un buon risultato e poi la analizza per determinare se siano presenti i segni della malattia. In uno studio clinico osservazionale che ha utilizzato più di 900 immagini, IDx-DR ha rilevato correttamente la retinopatia nel 87% delle volte.L'algoritmo venne ideato e sviluppato per la prima volta dal professore Michael Abramoff della città di Iowa City.<p>"
-      textopen = true
-    }
-    else {
-      $("#bottonetesto").remove()
-      textopen = false
-    }
-    console.log(textopen)
-  }
-
-</script>
-
-
 <body class="sub_page">
   <div class="hero_area layout_padding-left">
     <div class="custom_nav-box">
@@ -108,40 +90,81 @@
 
 
   <!-- about section -->
-  <section class="about_section  layout_padding-left">
+  <section class="about_section layout_padding-left" >
     <div class="box">
       <div class="detail-box">
         <div class="heading_container">
           <h1>
-            SI POSSONO PREVENIRE MALATTIE E PROBLMETICHE AGLI OCCHI?
+            MA COS'E' DAVVERO L'EPIGENETICA?
           </h1>
         </div>
         <p>
-          La perdita della vista è un pericolo concreto in quanto può accadere che non venga diagnosticata in tempo.
-          La soluzione fornita dalla nuova rivoluzione industriale può essere quella di uno sviluppo software che possa rilevare malattie che possono potenzialmente portare alla cecità.
-          Questo software può rilevare con ampio margine di precisione vari tipi di malattie oftalmiche (Riguardante gli occhi dal punto di vista anatomico o patologico.)
-                  
-          L’intelligenza artificiale e l’apprendimento automatico sono utilizzati per insegnare al sistema operativo a riconoscere sintomi di patologie oculari e a identificare precocemente i pazienti a rischio cecità.
-                  
-          Molti casi sono prevenibili . Cambieranno le modalità degli esami alla vista e i medici sapranno dare priorità ai pazienti con maggiore rischio.
-                  
-          Grazie a fotocamere speciali , smartphone e banda larga via satellite di piccole dimensioni verranno fornite immagini ad alta risoluzione della retina del paziente al software e le invia agli oftalmologi tramite la banda larga via satellite.
+          Testo intro
         </p>
-      </div>
 
-      <div class="img-box">
-        <img src="images/eye1.jpg" id = "occhio" alt="">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Collapsible Group 1</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Collapsible Group 2</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                Collapsible Group 3</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid" style="padding-top:1.5vh; height:max-content; width:100vw; color: rgb(0, 0, 0); margin-left: -120px;">
+          <div class="container p-3 my-3 border" style="border-radius:25px; color:#ffffff; background-color:#4da2db;"> 
+            <div class="detail-box">
+              <h3>testo</h3>
+              <p>
+                testooooo
+                <br>
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class = "box">
-      <div class="detail-box" style="text-align:center;">
-        <button onclick = "inserttext()" class="btn btn-info" style = "padding-bottom :0px; padding-top:30px; padding-left: 30px; padding-right: 30px;">
-          Read More
-          <div id = "bottone"><p id ="bottonetesto"></p></div>
-        </sbutton>
-      </div>
-    </div>
+    
+
   </section>
 
   <!-- info section -->
